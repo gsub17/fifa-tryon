@@ -150,8 +150,8 @@ class AlignedDataset(BaseDataset):
         BR_tensor = transform_B(BR)
 
         ### input M (masks)
-        M_path = self.M_paths[np.random.randint(12000)]
-        MR_path =self.MR_paths[np.random.randint(12000)]
+        M_path = self.M_paths[np.random.randint(50)]
+        MR_path =self.MR_paths[np.random.randint(50)]
         M = Image.open(M_path).convert('L')
         MR = Image.open(MR_path).convert('L')
         M_tensor = transform_A(MR)
